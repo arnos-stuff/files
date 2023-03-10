@@ -1,0 +1,26 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+  - LICENSE
+  - **/*.md
+
+theme: jekyll-theme-cayman
+
+title: ix-cli
+description: > # this means to ignore newlines until "baseurl:"
+  ix-cli is a command line tool for interacting with the ix.io pastebin service.
+
+host: https://pkg.arnov.dev
+base_path: /ix
+enablement: true
+show_downloads: true
+
+github:
+  is_project_page: true
+  pypi_url: https://pypi.org/project/ix-cli/
+  tar_url: https://pypi.org/project/ix-cli/#files
+  zip_url: https://pypi.org/project/ix-cli/#files

@@ -1,0 +1,27 @@
+{
+    "baseurl": "https://github.com/arnos-stuff/",
+    "repositories": [
+        {
+            "name": "ix-cli",
+            "lang": "python",
+            "repo": "ix",
+            "index": "pypi",
+            "description": "A CLI & lightweight python module to interact with the [ix.io](http://ix.io) pastebin service."
+        },
+        {
+            "name": "iotree",
+            "lang": "python",
+            "repo": "richtree",
+            "index": "pypi",
+            "description": "A rich CLI to handle multi-format file I/O + pretty print them using [rich](https://rich.readthedocs.io/en/latest/)."
+        }
+    ],
+    "indexes": [
+        {
+            "name": "pypi",
+            "lang": "python",
+            "url": "https://pypi.org/simple",
+            "prefix": "https://pypi.org/project/"
+        }
+    ]
+}
