@@ -1,0 +1,18 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - **/*.md
+
+theme: jekyll-theme-cayman
+
+title: "Arno's Package Registry"
+description: > # this means to ignore newlines until "baseurl:"
+  You should find most information related to my packages here. 
+
+host: https://pkg.arnov.dev
+base_path: /
+enablement: true
+show_downloads: false
