@@ -13,6 +13,11 @@ indexes = packages['indexes']
 tmp = Path('tmp')
 tmp.mkdir(exist_ok=True)
 
+def move(file, dst):
+    new_file = pkgdir.joinpath(*file.parts[2:])
+    new_file.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy(file, new_file)
+
 for pkg in repos:
     url = baseurl + pkg["repo"] + '.git'
     print(f'Cloning {url}')
@@ -23,8 +28,10 @@ for pkg in repos:
     
     
     for md in markdowns:
-        new_md = pkgdir.joinpath(*md.parts[2:])
-        new_md.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy(md, new_md)
+        config_yaml = md.parent / '_config.yaml'
+        config_yaml = config_yaml if config_yaml.exists() else md.parent / '_config.yml'
+        if config_yaml.exists():
+            move(config_yaml, pkgdir)
+        move(md, pkgdir)
         shutil.rmtree(pkgdir / md.parts[1], ignore_errors=True)
     shutil.rmtree(tmp, ignore_errors=True)

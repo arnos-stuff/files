@@ -7,6 +7,8 @@ include:
   - README.md
   - LICENSE
   - "**/*.md"
+  - "**/*.yaml"
+  - "**/*.yml"
 
 theme: jekyll-theme-cayman
 
