@@ -6,8 +6,7 @@ Here are a few ones I like:
 
 ## Python
 
-- [ix cli](ix/README.md) is a cli tool for the command line pastebin tool [ix](ix.io)
-- [iotree](iotree/README.md) is an experimental mashup of IO tools with rich display on top
+- [ix cli](https://pkg.arnov.dev/ix/README.md) is a cli tool for the command line pastebin tool [ix](ix.io)
 
 ## Others
 
