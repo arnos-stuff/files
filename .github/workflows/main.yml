@@ -34,11 +34,9 @@ jobs:
           python-version: 3.9 #install the python needed
           run: |
             python -m pip install --upgrade pip
-            if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: execute python fetch script # run file
-        run: |
-          python fetch.py
-          python index.py
+            pip install -r requirements.txt
+            python fetch.py
+            python index.py
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
