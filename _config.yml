@@ -10,17 +10,10 @@ include:
 
 theme: jekyll-theme-cayman
 
-title: ix-cli
+title: "Arno's Package Repository"
 description: > # this means to ignore newlines until "baseurl:"
-  ix-cli is a command line tool for interacting with the ix.io pastebin service.
+  This is a repository of any packages I have created.
 
 host: https://pkg.arnov.dev
-base_path: /ix
 enablement: true
-show_downloads: true
-
-github:
-  is_project_page: true
-  pypi_url: https://pypi.org/project/ix-cli/
-  tar_url: https://pypi.org/project/ix-cli/#files
-  zip_url: https://pypi.org/project/ix-cli/#files
+show_downloads: false
