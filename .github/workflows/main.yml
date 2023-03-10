@@ -34,6 +34,7 @@ jobs:
           rm README.md
           shopt -s globstar
           mv pages/**/*.md .
+          mv pages/*.yaml .
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
